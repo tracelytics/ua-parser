@@ -14,7 +14,7 @@ user_agent_parsers:
   - regex: '(Fennec)/(\d+)\.(\d+)\.?([ab]?\d+[a-z]*)'
     family_replacement: 'Firefox Mobile'
   - regex: '(Fennec)/(\d+)\.(\d+)(pre)'
-    family_replacment: 'Firefox Mobile'
+    family_replacement: 'Firefox Mobile'
   - regex: '(Fennec)/(\d+)\.(\d+)'
     family_replacement: 'Firefox Mobile'
   - regex: 'Mobile.*(Firefox)/(\d+)\.(\d+)'
@@ -140,6 +140,10 @@ user_agent_parsers:
   # Sogou Explorer 2.X
   - regex: '(SE 2\.X) MetaSr (\d+)\.(\d+)'
     family_replacement: 'Sogou Explorer'
+    
+  # Baidu Browser
+  - regex: '(FlyFlow)/(\d+)\.(\d+)'
+    family_replacement: 'Baidu Explorer'
 
   # Pingdom
   - regex: '(Pingdom.com_bot_version_)(\d+)\.(\d+)'
@@ -295,7 +299,7 @@ user_agent_parsers:
   - regex: '(Silk)/(\d+)\.(\d+)(?:\.([0-9\-]+))?'
 
   # WebKit Nightly
-  - regex: '(AppleWebKit)/(\d+)\.?(\d+)?\+ .* Version/\d+\.\d+.\d+ Safari/'
+  - regex: '(AppleWebKit)/(\d+)\.?(\d+)?\+ .* Safari'
     family_replacement: 'WebKit Nightly'
 
   # Safari
@@ -601,6 +605,12 @@ device_parsers:
   - regex: 'webOS.*(P160UNA)/(\d+).(\d+)'
     device_replacement: 'HP Veer'
 
+  ##########
+  # PlayStation
+  ##########
+  - regex: '(PlayStation Portable)'
+  - regex: '(PlayStation Vita)'
+  
   ##########
   # incomplete!
   # Kindle
